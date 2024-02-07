@@ -1,0 +1,116 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Varela Round", "Quicksand", sans-serif;
+  background: url(background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+  font-size: 16px; /* Set a base font size for better responsiveness */
+}
+
+.postcard,
+.postcard1 {
+  width: 100%;
+  max-width: 800px; /* Set a maximum width to avoid stretching on larger screens */
+  height: auto; /* Make the height adapt to the content */
+  background: rgba(255, 255, 255, 0.101);
+  margin: 0 auto;
+  border-radius: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3em;
+  box-shadow: 0.8em 0.8em 15px rgba(0, 0, 0, 0.3);
+  -ms-transform: rotate(2.5deg);
+  -webkit-transform: rotate(2.5deg);
+  transform: rotate(2.5deg);
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.postcard1 {
+  background: #f594b862;
+  position: relative; /* Change to relative for positioning within the document flow */
+  left: auto; /* Remove left property */
+}
+
+h1 {
+  text-align: center;
+  font-size: 4.8em;
+  color: #fdfdfd;
+  margin-bottom: 5px;
+}
+
+/* Animation */
+.postcard:hover,
+.postcard:active,
+.postcard:focus {
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.mail_stamp {
+  width: 100px;
+  float: right;
+}
+
+.push {
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+}
+
+/* Footer */
+footer {
+  margin: 2em auto;
+  text-align: center;
+  font-family: "Varela Round", "Quicksand", sans-serif;
+  color: white;
+}
+
+footer p {
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+
+p span {
+  font-size: 20px; /* Adjust font size for smaller screens */
+  font-weight: 600;
+  text-shadow: 0 0 20px rgb(255, 255, 255);
+  color: #800020;
+}
+
+p {
+  font-size: 16px; /* Adjust font size for smaller screens */
+  font-weight: 400;
+}
+
+.ullu {
+  font-size: 18px; /* Adjust font size for smaller screens */
+  text-shadow: 0 0 20px rgb(255, 255, 255);
+}
+
+.address img {
+  border-radius: 50%;
+  width: 50px; /* Adjust image size for smaller screens */
+  height: auto;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 3em;
+  }
+}
